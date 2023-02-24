@@ -1,6 +1,6 @@
 defmodule Bowling do
   def score([]), do: 0 #caso base
-  def score([[a,nil|_c]|rest]) do
+  def score([[10,nil|_c]|rest]) do
     #double lookahead
     [[c,d|_]|_]=rest
     10+c+d+score(rest)
