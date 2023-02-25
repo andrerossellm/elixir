@@ -18,7 +18,7 @@ defmodule BowlingTest do
     assert Bowling.score(game) == 24
   end
   test "perfect game" do
-  game = List.duplicate([10,nil], 9) ++ [[10,10,10]]
-  assert Bowling.score(game) == 300
+    game = List.duplicate([10,nil], 9) ++ [[10,10,10]]
+    assert Bowling.score(game) == 300
   end
 end
